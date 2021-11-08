@@ -58,6 +58,8 @@
     height: 45vw;
     width: 100%;
     display: grid;
+    grid-template-rows: 2vw 3vw 25vw 5vw 5vw 5vw;;
+    grid-template-columns: 10% 8% 21% 6% 15% 40%;
 }
 .about{
     grid-row: 3;
