@@ -1,0 +1,71 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    height: 100vw;
+    display: grid;
+    grid-template-rows: 50px 45vw 45vw 45vw 45vw;
+    
+}
+.header{
+    height: 58px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.nav{
+    grid-row: 1;
+    height: 59px;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 40% 12% 12% 12% 12% 12%;
+    grid-template-rows: 50px;
+    top: 0px;
+    left: 0px;
+    background: #a48468;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.menu__home{
+    grid-column: 2;
+    grid-row: 1;
+}
+.menu__about{
+    grid-column: 3;
+    grid-row: 1;
+}
+.menu__hard-skills{
+    grid-column: 4;
+    grid-row: 1;
+}
+.menu__contacts{
+    grid-column: 5;
+    grid-row: 1;
+}
+.home{
+    grid-row: 2;
+}
+.home-wrapper{
+    position: absolute;
+    left: 0px;
+    background: #a48468;
+    height: 45vw;
+    width: 100%;
+    display: grid;
+}
+.about{
+    grid-row: 3;
+}
+
+.hard-skills{
+    grid-row: 4; 
+}
+.contacts{
+    grid-row: 5;
+}
