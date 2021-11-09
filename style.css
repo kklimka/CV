@@ -4,7 +4,7 @@
 .wrapper{
     height: 100vw;
     display: grid;
-    grid-template-rows: 50px 45vw 45vw 45vw 45vw;
+    grid-template-rows: 50px 45vw 64givw 45vw 45vw;
     
 }
 .header{
@@ -58,21 +58,58 @@
     height: 45vw;
     width: 100%;
     display: grid;
-    grid-template-rows: 2vw 3vw 25vw 5vw 5vw 5vw;;
-    grid-template-columns: 10% 8% 21% 6% 15% 40%;
+    grid-template-rows: 2vw 3vw 20vw 5vw 5vw 2vw 8vw;;
+    grid-template-columns: 10% 8% 21% 5% 6% 15% 35%;
 }
 .my-foto-small{
-    grid-row: 3;
+    grid-row: 3 / 4;
     grid-column: 3;
     height: 25vw;
 }
 .my-foto-big{
-    grid-row: 2 / 7;
-    grid-column: 6;
-    height: 43vw;
+    grid-row: 1 / 8;
+    grid-column: 7;
+    height: 45vw;
+}
+
+.my-surname{
+    grid-column: 3;
+    grid-row: 4;
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.4;
+    position: relative;
+    top: -10px;
+    left: -40px;
+}
+.my-name{
+    grid-column: 3;
+    grid-row: 5;
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+.text-specialty{
+    height: 5vw;
+    grid-column: 3 / 5;
+    grid-row: 7;
+    color: white;
+    font-size: 31px;
+    font-weight: 800;
+    display: flex;
+    justify-content: end;
+   
 }
 .about{
     grid-row: 3;
+} 
+.about-wrapper{
+    height: 64vw;
+    background: #e2c8a8;
+    display: grid;
 }
 
 .hard-skills{
