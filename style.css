@@ -4,7 +4,7 @@
 .wrapper{
     height: 100vw;
     display: grid;
-    grid-template-rows: 50px 45vw 64givw 45vw 45vw;
+    grid-template-rows: 50px 45vw 50vw 45vw 45vw;
     
 }
 .header{
@@ -107,11 +107,44 @@
     grid-row: 3;
 } 
 .about-wrapper{
-    height: 64vw;
+    height: 50vw;
+    width: 100%;
     background: #e2c8a8;
     display: grid;
+    grid-template-columns: 9% repeat(3, 26%) 8%;
+    grid-template-rows: 10vw 40vw;
+    grid-column-gap: 15px;
+    position: absolute;
+    left: 0px;
 }
+.about-text{
+    grid-column: 1 / 6;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    color: #635c56;
+    font-size: 50px;
+    font-weight: 900;
+}
+.box-description{
+    grid-column: 2;
+    grid-row: 2;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: #635c56;
 
+}
+.box-skills{
+    grid-column: 3;
+    grid-row: 2;
+}
+.box-education{
+    grid-column: 4;
+    grid-row: 2;
+}
 .hard-skills{
     grid-row: 4; 
 }
