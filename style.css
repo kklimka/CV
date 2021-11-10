@@ -56,7 +56,9 @@
     grid-row: 3 / 4;
     grid-column: 3;
     height: 25vw;
+
 }
+
 .my-foto-big{
     grid-row: 1 / 8;
     grid-column: 7;
@@ -107,7 +109,10 @@
     grid-column-gap: 15px;
 }
 .about-text{
-    grid-column: 1 / 6;
+    background: none;
+    border: none;
+    width: 100%;
+    grid-column: 3;
     grid-row: 1;
     display: flex;
     justify-content: center;
@@ -118,6 +123,7 @@
 .box-description{
     grid-column: 2;
     grid-row: 2;
+
 }
 .title{
     display: flex;
@@ -125,19 +131,47 @@
     padding-bottom: 10px;
     color: #635c56;
     font-size: 30px;
-    font-weight: 600
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
 
+}
+.title-button{
+    width: 100%;
+    border: none;
+    color: #635c56;
+    background: #e2c8a8;
+    font-size: 30px;
+    font-weight: 600
 }
 .box-skills{
     grid-column: 3;
     grid-row: 2;
 }
 .text-description{
+
     display: flex;
     justify-content: center; 
     color: #635c56;
     font-size: 20px;
+    font-weight: 600;
+   
 }
+.c, .text-soft-skills, .text-description__education, .text-description__about-me{
+    opacity: 0;
+    transform: translate(-50%, 0);
+    transition: all 1s ease 0s;
+}
+.title__short-description, .title__soft-skills, .title__education{
+    opacity: 0;
+    transform: translate(50%, 0);
+    transition: all 1s ease 0s;
+}
+.no-active{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 .box-education{
     grid-column: 4;
     grid-row: 2;
@@ -147,8 +181,8 @@
     
 }
 .hard-skills-wrapper{
-    background: #dbcdc2;
-    height: 30vw;
+    background: #a48468;
+    height: 31vw;
     display: grid;
     grid-template-columns: 2% repeat(6, calc(96% / 6)) 2%;
     grid-template-rows: 15vw 15vw;
@@ -185,20 +219,20 @@
     grid-row: 5;
 }
 .contacts-wrapper{
-height: 20vw;
-background: #dbcdc2;
+height: 21vw;
+background: #a48468;
 display: flex;
 justify-content: space-around;
 }
 .box-contacts{
     height: 20vw;
-    width: calc(100% / 4);
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .text-contacts{
-    color: #635c56;
+    color: white;
     font-size: 30px;
 }
 .my-contact{
@@ -206,10 +240,7 @@ justify-content: space-around;
 }
 .link-lincedin{
     text-decoration: none;
-    color: #635c56;
-}
-.my-contact__email{
-    font-size: 23px;
+    color: white;
 }
 .footer{
     grid-row: 6;
@@ -229,4 +260,87 @@ justify-content: space-around;
     position: absolute;
     left: 0px;
     width: 100%;
+}
+
+@media (max-width: 1357px) {
+    .text-contacts{
+        font-size: 25px;
+    }
+
+}
+@media (max-width: 1200px){
+    .my-surname{
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1;
+        top: -1px;
+    left: -40px;
+    }
+    .my-name{
+        font-size: 50px;
+    }
+    .text-specialty{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+@media (max-width: 1010px){
+    .text-description{
+        font-size: 17px;
+    font-weight: 600;
+    }
+
+}
+@media (max-width: 950px){
+    .about-text{
+        font-size: 40px;
+    font-weight: 900;
+    }
+    .title{
+        font-size: 25px;
+    font-weight: 600
+    }
+}
+@media (max-width: 858px){
+    .text-description{
+        font-size: 15px;
+    font-weight: 600;
+    }
+    .about-text{
+        font-size: 30px;
+    font-weight: 900;
+    }
+    .title{
+        font-size: 20px;
+    font-weight: 600
+    }
+    .text-contacts{
+        font-size: 20px;
+    }
+    .my-surname{
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .my-name{
+        font-size: 34px;
+    }
+    .text-specialty{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+@media (max-width: 770px){
+    .text-description{
+        font-size: 12px;
+    font-weight: 600;
+    }
+}
+@media (max-width: 628px){
+    .text-description{
+        font-size: 10px;
+    font-weight: 600;
+    }
+    .text-contacts{
+        font-size: 15px;
+    }
 }
