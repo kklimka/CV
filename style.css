@@ -26,20 +26,25 @@
     align-items: center;
     color: white;
 }
-.menu__home{
+.menu__cv{
+
     grid-column: 2;
     grid-row: 1;
 }
-.menu__about{
+.menu__home{
     grid-column: 3;
     grid-row: 1;
 }
-.menu__hard-skills{
+.menu__about{
     grid-column: 4;
     grid-row: 1;
 }
-.menu__contacts{
+.menu__hard-skills{
     grid-column: 5;
+    grid-row: 1;
+}
+.menu__contacts{
+    grid-column: 6;
     grid-row: 1;
 }
 .home{
@@ -119,6 +124,18 @@
     color: #635c56;
     font-size: 50px;
     font-weight: 900;
+}
+.img-click{
+    width: 50%;
+    height: 50%;
+}
+.wrapper-img-click{
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 .box-description{
     grid-column: 2;
