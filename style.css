@@ -54,7 +54,7 @@
     background: #a48468;
     height: 45vw;
     display: grid;
-    grid-template-rows: 2vw 3vw 20vw 5vw 5vw 2vw 8vw;;
+    grid-template-rows: 2vw 3vw 20vw 5vw 5vw 2vw 8vw;
     grid-template-columns: 10% 8% 21% 5% 6% 15% 35%;
 }
 .my-foto-small{
