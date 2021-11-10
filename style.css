@@ -176,12 +176,12 @@
 }
 .c, .text-soft-skills, .text-description__education, .text-description__about-me{
     opacity: 0;
-    transform: translate(-50%, 0);
+    transform: translate(0, 20%);
     transition: all 1s ease 0s;
 }
 .title__short-description, .title__soft-skills, .title__education{
     opacity: 0;
-    transform: translate(50%, 0);
+    transform: translate(0, -20%);
     transition: all 1s ease 0s;
 }
 .no-active{
